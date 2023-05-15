@@ -2,17 +2,15 @@
 
 The Car Solutions owns multiple workshops located at different locations with different working hours.
 
-The company is currently building a platform for its admin staff in order to schedule booking appointments with different workshops.
+The company is currently building a platform for its admin staff in view all data
 
-Whenever a client called in to schedule for an appointment. The admin staff needs to be able to check the availability of the workshops, make recommendations and also create a new appointment.
-
-The staff at the workshop will need to have access to the appointments on daily basis in order to prepare the required parts and tools.
+Whenever a client called in to schedule for an appointment. The admin staff needs to be able create a new appointment.
 
 ## Your task
 
 Create pages that allows the admin staff to:
 
-#### Clients Page
+#### View Clients Page
 1. List down all the clients
     - It has a table with following columns
         - Name
@@ -25,7 +23,7 @@ Create pages that allows the admin staff to:
             - View Appointments
 
 
-#### Cars Page
+#### View Cars Page
 1. List down all the cars against provided client
     - It has a table with following columns
         - Title
@@ -36,7 +34,7 @@ Create pages that allows the admin staff to:
         - Action
             - View Appointments
 
-#### Appintments Page
+#### View Appintments Page
 1. List down all the appintments against provided car and client
     - It has a table with following columns
         - Start Time
