@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/php-mariadb
 {
-	"name": "Laravel",
+	"name": "PHP & MariaDB",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -14,26 +14,30 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "cp .env.example .env && composer install && php artisan key:generate && php artisan migrate && php artisan db:seed && php artisan serve",
-
+	
 	"shutdownAction": "stopCompose",
-	"extensions": [
-		"editorconfig.editorconfig",
-		"ryannaddy.laravel-artisan",
-		"amiralizadeh9480.laravel-extra-intellisense",
-		"stef-k.laravel-goto-controller",
-		"codingyu.laravel-goto-view",
-		"mikestead.dotenv",
-		"eg2.tslint",
-		"christian-kohler.path-intellisense",
-		"esbenp.prettier-vscode",
-		"CoenraadS.bracket-pair-colorizer"
-	],
-	"settings": {
-		"#terminal.integrated.shell.linux": "/bin/bash"
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"editorconfig.editorconfig",
+				"ryannaddy.laravel-artisan",
+				"amiralizadeh9480.laravel-extra-intellisense",
+				"stef-k.laravel-goto-controller",
+				"codingyu.laravel-goto-view",
+				"mikestead.dotenv",
+				"eg2.tslint",
+				"christian-kohler.path-intellisense",
+				"esbenp.prettier-vscode",
+				"CoenraadS.bracket-pair-colorizer"
+			],
+			"settings": {
+				"#terminal.integrated.shell.linux": "/bin/bash"
+			}
+		}
 	},
 	"portsAttributes": {
 		"80": {
-		    "label": "HTTP"
+			"label": "HTTP"
 		}
 	}
 }
